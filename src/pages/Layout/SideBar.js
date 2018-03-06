@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Layout} from 'antd'
 import {withRouter} from 'react-router-dom'
-import {menus} from 'utils/menu'
+import {routesMap} from '@/router'
 import SideBarItem from './SideBarItem'
 
 const {Sider} = Layout
@@ -15,7 +15,7 @@ class SideBar extends Component {
     return (
       <Sider>
         <SideBarItem
-          menu={menus}
+          menu={routesMap}
           theme="dark"
           mode="inline"
           ></SideBarItem>
